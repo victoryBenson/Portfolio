@@ -18,7 +18,7 @@ function App() {
   return (
     <div className={`${darkMode && 'dark'}`}>
         <header className=''>
-            <div className='flex flex-col items-center justify-center h-20 relative shadow-sm dark:bg-black dark:text-white capitalize'>
+            <div className='flex flex-col md:items-center items-start justify-center h-20 pl-5 relative shadow-sm dark:bg-black dark:text-white capitalize'>
                 <h1 className='font-extrabold text-3xl '>victory benson</h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span></p>
                 <button onClick={handleToggle} className='bg-stone-200 dark:bg-white/40 rounded-full right-10 absolute items-center top-1/4 p-2'>{darkMode? <CiDark className='dark:text-black'/> : <GoSun />}</button>
