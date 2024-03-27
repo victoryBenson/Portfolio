@@ -18,14 +18,14 @@ function App() {
   return (
     <div className={`${darkMode && 'dark'}`}>
         <header className=''>
-            <div className='flex flex-col md:items-center items-start justify-center h-24 pl-5 py-2 relative shadow-sm dark:bg-black dark:text-white capitalize'>
+            <div className='flex flex-col md:items-center items-start md:justify-center justify-start border h-24 pl-2 sm:pl-0 py-2 relative shadow-sm dark:bg-black dark:text-white capitalize'>
                 <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span></p>
                 <p className='text-sm lowercase'>
-                    <a href="#services" className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2 text-sm'>
+                    <a href="#services" className=''>
                         need a website?
                     </a>
-                    <a href="#contact" className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2 '>
+                    <a href="#contact" className=''>
                         contact me!
                     </a>
                 </p>
