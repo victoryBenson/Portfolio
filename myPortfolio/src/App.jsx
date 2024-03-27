@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { TfiLink } from "react-icons/tfi";
 import { BsFillEnvelopeAtFill, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { GiProcessor } from "react-icons/gi";
+import { services } from './component/services';
 
 
 function App() {
@@ -18,11 +19,11 @@ function App() {
   return (
     <div className={`${darkMode && 'dark'}`}>
         <header className=''>
-            <div className='flex flex-col md:items-center items-start md:justify-center justify-start border h-24 pl-2 sm:pl-0 py-2 relative shadow-sm dark:bg-black dark:text-white capitalize'>
+            <div className='flex flex-col md:items-center items-start md:justify-center justify-start border h-24 pl-4 md:pl-0 py-2 relative shadow-sm dark:bg-black dark:text-white capitalize'>
                 <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span></p>
-                <p className='text-sm lowercase'>
-                    <a href="#services" className=''>
+                <p className='text-sm lowercase space-x-2'>
+                    <a href="#services" className='underline decoration-purple-600 decoration-2'>
                         need a website?
                     </a>
                     <a href="#contact" className=''>
@@ -37,7 +38,7 @@ function App() {
                 <div className='p-3 lg:w-[50%]'>
                     <h1 className='font-bold text-3xl'>Hi, I'm <span className='text-purple-600 dark:text-violet-400 font-extrabold'>Victory!</span></h1>
                     {/* <p className='dark:text-gray-300 capitalize' ><span>web developer</span> | <span>tech enthusiast</span></p> */}
-                    <p className='py- dark:text-violet-400 text-purple-600 font-mono'>I love bringing ideas to life with coding and design</p>
+                    <p className='py- dark:text-violet-400 text-purple-600 font-mono'>A software engineer who constantly seek out innovative solutions to everyday problem.</p>
                     <p className='py-2 pt-5 font-mono'><strong>Does your business has an effective online presence? </strong> Can your clients/customers easily find you on the internet? Does your website look good when viewed on mobile devices?..If your answer to any of these question is "No" or "Maybe" then contact me let's work together to give you exactly what you deserve.  </p>
                 </div>
                 <div className=' lg:w-[50%] lg:h-full h-60 p-2'>
@@ -70,6 +71,25 @@ function App() {
         <section id='services' className='dark:bg-black dark:text-white'>
             <div>
                 <h1 className='text-2xl font-bold px-2 flex items-center'><GiProcessor className='mr-1' />How it works</h1>
+                <p className='p-2'>-Here is my recipe for a successful project</p>
+                <div className='p-2'>
+                    {
+                        services.map((data)=> {
+                            return (
+                                <ul key={data.id} className='pl-8 '>
+                                    <li className='font-bold text-xl list-disc capitalize'>{data?.topic}</li>
+                                    <li className='p-2 first-letter:capitalize'><strong>{data?.extra}</strong>{data?.details}</li>
+                                </ul>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </section>
+        <section id='works' className='dark:bg-black dark:text-white'>
+            <div>
+                <h1 className='font-bold p-2'>Recent Projects</h1>
+
             </div>
         </section>
     </div>
