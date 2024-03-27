@@ -18,10 +18,18 @@ function App() {
   return (
     <div className={`${darkMode && 'dark'}`}>
         <header className=''>
-            <div className='flex flex-col md:items-center items-start justify-center h-20 pl-5 relative shadow-sm dark:bg-black dark:text-white capitalize'>
-                <h1 className='font-extrabold text-3xl '>victory benson</h1>
+            <div className='flex flex-col md:items-center items-start justify-center h-24 pl-5 py-2 relative shadow-sm dark:bg-black dark:text-white capitalize'>
+                <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span></p>
-                <button onClick={handleToggle} className='bg-stone-200 dark:bg-white/40 rounded-full right-10 absolute items-center top-1/4 p-2'>{darkMode? <CiDark className='dark:text-black'/> : <GoSun />}</button>
+                <p className='text-sm lowercase'>
+                    <a href="#services" className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2 text-sm'>
+                        need a website?
+                    </a>
+                    <a href="#contact" className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2 '>
+                        contact me!
+                    </a>
+                </p>
+                <button onClick={handleToggle} className='bg-stone-200 dark:bg-white/40 rounded-full md:right-10 right-5 absolute items-center top-1/4 p-2'>{darkMode? <CiDark className='dark:text-black'/> : <GoSun />}</button>
             </div>
         </header>
         <section id='hero' className='flex lg:h-[60vh]  justify-center dark:bg-black dark:text-white'>
@@ -30,7 +38,7 @@ function App() {
                     <h1 className='font-bold text-3xl'>Hi, I'm <span className='text-purple-600 dark:text-violet-400 font-extrabold'>Victory!</span></h1>
                     {/* <p className='dark:text-gray-300 capitalize' ><span>web developer</span> | <span>tech enthusiast</span></p> */}
                     <p className='py- dark:text-violet-400 text-purple-600 font-mono'>I love bringing ideas to life with coding and design</p>
-                    <p className='py-2 font-mono'>Does your business has an effective online presence? Can your clients/customers easily find you on the internet? Does your website look good when viewed on mobile devices?..If your answer to any of these question is "No" or "Maybe" then contact me let's work together to give you exactly what you deserve.  </p>
+                    <p className='py-2 pt-5 font-mono'><strong>Does your business has an effective online presence? </strong> Can your clients/customers easily find you on the internet? Does your website look good when viewed on mobile devices?..If your answer to any of these question is "No" or "Maybe" then contact me let's work together to give you exactly what you deserve.  </p>
                 </div>
                 <div className=' lg:w-[50%] lg:h-full h-60 p-2'>
                     <img className='h-full w-full object-contain object-center rounded' src="https://i.postimg.cc/YScxzHGw/profile-Image.png" alt="profile image" />
@@ -59,7 +67,7 @@ function App() {
                 </div>      
             </div>
         </section>
-        <section className='dark:bg-black dark:text-white'>
+        <section id='services' className='dark:bg-black dark:text-white'>
             <div>
                 <h1 className='text-2xl font-bold px-2 flex items-center'><GiProcessor className='mr-1' />How it works</h1>
             </div>
