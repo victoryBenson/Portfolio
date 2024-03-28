@@ -42,7 +42,7 @@ function App() {
                         need a website?
                     </a>
                 </p>
-                <button onClick={handleToggle} className='bg-stone-200 dark:bg-white/40 dark:text-white rounded-full md:right-10 right-5 absolute items-center top-1/4 p-2'>{darkMode? <CiDark className=''/> : <GoSun />}</button>
+                <button onClick={handleToggle} className='bg-stone-200 dark:bg-white/40 dark:text-white rounded-full md:right-10 right-5 absolute items-center top-1/ sm: top-1/4  p-1 sm:p-2'>{darkMode? <CiDark className=''/> : <GoSun />}</button>
             </div>
         </header>
         <section id='hero' className='flex lg:h-[60vh]  justify-center dark:bg-black dark:text-white'>
@@ -82,8 +82,10 @@ function App() {
         </section>
         <section id='services' className='dark:bg-black dark:text-white '>
             <div className='px-2 relative'>
-                <h1 className='text-2xl font-bold flex items-center sticky top-24 bg-white text-black dark:bg-black dark:text-white py-3 px-2'><GiProcessor className='mr-1' />How it works</h1>
-                <p className='p-2'>-Here is my recipe for a successful project</p>
+                <div className='sticky top-24 bg-white text-black dark:bg-black dark:text-white'>
+                    <h1 className='text-2xl font-bold flex items-center py-3 px-2'><GiProcessor className='mr-1' />How it works</h1>
+                    <p className='p-2'>-Here is my recipe for a project</p>
+                </div>
                 <div className='p-2'>
                     {
                         services.map((data)=> {
@@ -122,32 +124,32 @@ function App() {
             </div>
         </section>
         <footer className='dark:bg-black dark:text-white border-t border-stone-100/10'>
-            <div className='py-5 px-1 self-center flex flex-col items-center justify-center'>
+            <div className='py-5 self-center flex flex-col items-center justify-center'>
                 <h1 className='text-2xl font-bold px-2 py-3 flex items-center'><TfiLink />Connect with Victory</h1>
                 <div className='flex flex-wrap transition-all '>
-                    <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsGithub size={20} className=''/>
                         <span className = "text-stone-500">Github</span>
                     </a>
-                    <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsLinkedin size={20} className='text-[#3741a4]'/>
                         <span className = "text-stone-500">LinkedIn</span>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=+234-8136878980" className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a href="https://api.whatsapp.com/send?phone=+234-8136878980" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsWhatsapp size={20} className='text-[#50eb81]'/>
                         <span className = "text-stone-500">Whatsapp</span>
                     </a>
-                    <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7 flex flex-col items-center'/>
-                        <span className = "text-stone-500">Envelope</span>
+                        <span className = "text-stone-500">Gmail</span>
                     </a>
-                    <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <FaXTwitter size={20} className='text-[#4691b0]'/>
                         <span className = "text-stone-500">X</span>
                     </a>
                 </div> 
                 <p className='py-2 text-stone-500'>&copy; Kennytech. All right reserved.</p>
-                <a onClick={scrollToTop} href='#header' className='flex flex-col items-center right-4 absolute bottom-1'><IoIosArrowUp/><span className='text-stone-500'>back top top</span></a>     
+                <a onClick={scrollToTop} href='#header' className='flex flex-col items-center right-4 absolute bottom-1'><IoIosArrowUp className='bg-black shadow text-white rounded-lg' size={20}/></a>     
             </div>
         </footer>
     </div>
