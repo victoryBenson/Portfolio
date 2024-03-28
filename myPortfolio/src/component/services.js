@@ -2,7 +2,7 @@ export const services = [
     {
         id: 1,
         topic: "Consultation",
-        extra:'whats the big idea?',
+        extra:'whats the big idea?', 
         details: "we would discuss the idea and your intentions for the project and the most possible way to achieve them"
     },
     {
@@ -13,7 +13,7 @@ export const services = [
     {
         id: 3,
         topic: "construction",
-        details: "once the proposal is accepted and you provide the required files, images and other assets. i get to work immediately"
+        details: "once the proposal is accepted and you provide the required files, images and other assets. I get to work immediately"
     },
     {
         id: 4,
