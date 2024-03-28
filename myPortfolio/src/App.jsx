@@ -38,7 +38,7 @@ function App() {
                 <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span> | <span>Freelancer</span></p>
                 <p className='text-sm lowercase space-x-2'>
-                    <a href="#services" className='underline'>
+                    <a href="#checkout" className='underline'>
                         need a website?
                     </a>
                 </p>
@@ -54,7 +54,7 @@ function App() {
                     <p className='py-2 pt-5 font-mono'><strong>Does your business has an effective online presence? </strong> Can your clients/customers easily find you on the internet? Does your website look good when viewed on mobile devices?..If your answer to any of these question is "No" or "Maybe" then contact me let's work together to give you exactly what you deserve.  </p>
                 </div>
                 <div className=' lg:w-[50%] lg:h-full h-60 p-2'>
-                    <img className='h-full w-full object-contain object-center rounded' src="https://i.postimg.cc/YScxzHGw/profile-Image.png" alt="profile image" />
+                    <img className='h-full w-full object-contain object-center rounded' src="https://i.postimg.cc/Prtp4JXh/kenny-Profile.png" alt="profile image" />
                 </div>
             </div>
         </section>
@@ -86,7 +86,7 @@ function App() {
                     <h1 className='text-2xl font-bold flex items-center py-3 px-2'><GiProcessor className='mr-1' />How it works</h1>
                     <p className='p-2'>-Here is my recipe for a project</p>
                 </div>
-                <div className='p-2'>
+                <div id='checkout' className='p-2'>
                     {
                         services.map((data)=> {
                             return (
