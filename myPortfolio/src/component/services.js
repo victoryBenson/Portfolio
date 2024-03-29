@@ -8,7 +8,7 @@ export const services = [
     {
         id: 2,
         topic: "Proposal",
-        details: "I'll prepare a proposal with detailed information of what i will provide for you, when and what it'll cost you"
+        details: "I'll prepare a proposal with detailed information of what I will provide for you, when and what it'll cost you"
     },
     {
         id: 3,

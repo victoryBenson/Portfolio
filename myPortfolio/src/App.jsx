@@ -36,7 +36,7 @@ function App() {
 
 
   return (
-    <div className={`${darkMode && 'dark'} relative transition-all hyphens-auto`}>
+    <div className={`${darkMode && 'dark'} relative transition-all hyphens-aut`}>
         <header id='header' className={`sticky top-0 z-10`}>
             <div className={`${isActive ? 'sticky top-4 bg-white z-10' : ''} flex flex-col md:items-center items-start md:justify-center justify-start h-24 pl-4 md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
                 <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
@@ -75,7 +75,7 @@ function App() {
                     <a href="https://api.whatsapp.com/send?phone=+234-8136878980" className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsWhatsapp size={20} className='text-[#50eb81]'/>
                     </a>
-                    <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
+                    <a href='mailto:victorybenson98@gmail.com' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7'/>
                     </a>
                     <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
@@ -90,18 +90,18 @@ function App() {
                     <h1 className='text-2xl font-bold flex items-center py-3 px-2'><GiProcessor className='mr-1' />How it works</h1>
                     <p className='p-2'>-Here is my recipe for a project</p>
                 </div>
-                <div id='checkout' className='p-2'>
+                <ol id='checkout' className='p-2 pl-5 sm:pl-10'>
                     {
                         services.map((data)=> {
                             return (
-                                <ul key={data.id} className='pl-8'>
-                                    <li className='font-bold text-xl list-disc capitalize'>{data?.topic}</li>
-                                    <li className='p-2 first-letter:capitalize font-mono'><strong>{data?.extra}</strong>{data?.details}</li>
-                                </ul>
+                                <li key={data.id} className=' list-decimal py-2'>
+                                    <span className='font-bold text-xl capitalize block'>{data?.topic}</span>
+                                    <span className=' first-letter:capitalize font-mono block'><strong >{data?.extra} </strong>{data?.details}</span>
+                                </li>
                             )
                         })
                     }
-                </div>
+                </ol>
             </div>
         </section>
         <section id='projects' className='dark:bg-black dark:text-white'>
@@ -143,7 +143,7 @@ function App() {
                         <BsWhatsapp size={20} className='text-[#50eb81]'/>
                         <span className = "text-stone-500">Whatsapp</span>
                     </a>
-                    <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a href='mailto:victorybenson98@gmail.com' className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7 flex flex-col items-center'/>
                         <span className = "text-stone-500">Gmail</span>
                     </a>
@@ -153,7 +153,7 @@ function App() {
                     </a>
                 </div> 
                 <p className='py-2 text-stone-500'>&copy; Kennytech. All right reserved.</p>
-                <a onClick={scrollToTop} href='#header' className='flex flex-col items-center right-4 absolute bottom-1'><IoIosArrowUp className='bg-black shadow text-white rounded-lg' size={20}/></a>     
+                <a onClick={scrollToTop} href='#header' className='flex flex-col items-center right-5 absolute bottom-4'><IoIosArrowUp className='bg-black shadow text-white rounded-lg' size={20}/></a>     
             </div>
         </footer>
     </div>
