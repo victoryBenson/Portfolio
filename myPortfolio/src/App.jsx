@@ -23,22 +23,26 @@ function App() {
     window.scrollTo(0,0)
   }
 
+  const scrollTo = () => {
+    document.getElementById('services').scrollIntoView({behavior: 'smooth'})
+  }
+
 
  useEffect(() => {
    window.addEventListener('scroll', ()=>{
     window.scrollY > 10 ? setIsActive(true) : setIsActive(false)
    })
  }, [])
- 
+
 
   return (
-    <div className={`${darkMode && 'dark'} relative transition-all`}>
+    <div className={`${darkMode && 'dark'} relative transition-all hyphens-auto`}>
         <header id='header' className={`sticky top-0 z-10`}>
             <div className={`${isActive ? 'sticky top-4 bg-white z-10' : ''} flex flex-col md:items-center items-start md:justify-center justify-start h-24 pl-4 md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
                 <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span> | <span>Freelancer</span></p>
-                <p className='text-sm lowercase space-x-2'>
-                    <a href="#checkout" className='underline'>
+                <p onClick={scrollTo} className='text-sm lowercase space-x-2'>
+                    <a href="#" className='underline'>
                         need a website?
                     </a>
                 </p>
@@ -50,7 +54,7 @@ function App() {
                 <div className='p-3 lg:w-[50%]'>
                     <h1 className='font-bold text-3xl'>Hi, I'm <span className='text-purple-600 dark:text-violet-400 font-extrabold'>Victory!</span></h1>
                     {/* <p className='dark:text-gray-300 capitalize' ><span>web developer</span> | <span>tech enthusiast</span></p> */}
-                    <p className='py- dark:text-violet-400 text-purple-600 font-mono'>A curious software engineer who constantly seek out innovative solutions to everyday problem.</p>
+                    <p className='py- dark:text-violet-400 text-purple-600 font-mono '>A curious software engineer who constantly seek out innovative solutions to everyday problem.</p>
                     <p className='py-2 pt-5 font-mono'><strong>Does your business has an effective online presence? </strong> Can your clients/customers easily find you on the internet? Does your website look good when viewed on mobile devices?..If your answer to any of these question is "No" or "Maybe" then contact me let's work together to give you exactly what you deserve.  </p>
                 </div>
                 <div className=' lg:w-[50%] lg:h-full h-60 p-2'>
@@ -90,7 +94,7 @@ function App() {
                     {
                         services.map((data)=> {
                             return (
-                                <ul key={data.id} className='pl-8 '>
+                                <ul key={data.id} className='pl-8'>
                                     <li className='font-bold text-xl list-disc capitalize'>{data?.topic}</li>
                                     <li className='p-2 first-letter:capitalize font-mono'><strong>{data?.extra}</strong>{data?.details}</li>
                                 </ul>
