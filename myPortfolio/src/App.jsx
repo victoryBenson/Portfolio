@@ -66,7 +66,7 @@ function App() {
             <div className='py-5 px-1 '>
                 <h1 className='text-2xl font-bold px-2 flex items-center'><TfiLink />Connect with me</h1>
                 <div className='flex flex-wrap transition-all '>
-                    <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
+                    <a href="https://github.com/victoryBenson" className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsGithub size={20} className=''/>
                     </a>
                     <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
@@ -131,7 +131,7 @@ function App() {
             <div className='py-5 self-center flex flex-col items-center justify-center'>
                 <h1 className='text-2xl font-bold px-2 py-3 flex items-center'><TfiLink />Connect with Victory</h1>
                 <div className='flex flex-wrap transition-all '>
-                    <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a href="https://github.com/victoryBenson" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsGithub size={20} className=''/>
                         <span className = "text-stone-500">Github</span>
                     </a>
