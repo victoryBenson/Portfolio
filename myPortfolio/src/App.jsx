@@ -30,15 +30,15 @@ function App() {
 
  useEffect(() => {
    window.addEventListener('scroll', ()=>{
-    window.scrollY > 10 ? setIsActive(true) : setIsActive(false)
+    window.scrollY > 60 ? setIsActive(true) : setIsActive(false)
    })
  }, [])
 
 
   return (
-    <div className={`${darkMode && 'dark'} relative transition-all hyphens-aut`}>
-        <header id='header' className={`sticky top-0 z-10`}>
-            <div className={`${isActive ? 'sticky top-4 bg-white z-10' : ''} flex flex-col md:items-center items-start md:justify-center justify-start h-24 pl-4 md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
+    <div className={`${darkMode && 'dark'} relative transition-all`}>
+        <header id='header' className={`${isActive && 'fixed z-50 inset-0 top-0 backdrop-blur'} h-24 bg-white/10`}>
+            <div className={`flex flex-col md:items-center items-start md:justify-center justify-start h-full pl-4 md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
                 <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span> | <span>Freelancer</span></p>
                 <p onClick={scrollTo} className='text-sm lowercase space-x-2'>
@@ -86,7 +86,7 @@ function App() {
         </section>
         <section id='services' className='dark:bg-black dark:text-white '>
             <div className='px-2 relative'>
-                <div className='sticky top-24 bg-white text-black dark:bg-black dark:text-white'>
+                <div className='sticky top-24 z-10 bg-white text-black dark:bg-black dark:text-white '>
                     <h1 className='text-2xl font-bold flex items-center py-3 px-2'><GiProcessor className='mr-1' />How it works</h1>
                     <p className='p-2'>-Here is my recipe for a project</p>
                 </div>
@@ -125,7 +125,7 @@ function App() {
                         })
                     }
                 </div>
-                <p className='hover:font-bold transition-all underline decoration-purple-600 decoration-2 underline-offset-2 font-mono'>
+                <p className=' hover:font-bold transition-all underline decoration-purple-600 decoration-2 underline-offset-2 font-mono'>
                     <a href="http://github.com/victoryBenson" className=''>see more</a>
                 </p>
             </div>
