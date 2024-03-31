@@ -125,6 +125,9 @@ function App() {
                         })
                     }
                 </div>
+                <p className='hover:font-bold transition-all underline decoration-purple-600 decoration-2 underline-offset-2 font-mono'>
+                    <a href="http://github.com/victoryBenson" className=''>see more</a>
+                </p>
             </div>
         </section>
         <footer className='dark:bg-black dark:text-white border-t border-stone-100/10'>
