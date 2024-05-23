@@ -12,27 +12,23 @@ import { IoIosArrowUp } from "react-icons/io";
 
 
 function App() {
- const [darkMode, setDarkMode] = useState(false);
- const [isActive, setIsActive] = useState(false)
+    const [darkMode, setDarkMode] = useState(false);
+    const [isActive, setIsActive] = useState(false)
 
- const handleToggle = () => {
-    setDarkMode(!darkMode)
- };
+    const handleToggle = () => {
+        setDarkMode(!darkMode)
+    };
 
- const scrollToTop = () => {
-    window.scrollTo(0,0)
-  }
+    const scrollToTop = () => {
+        window.scrollTo(0,0)
+    }
 
-  const scrollTo = () => {
-    document.getElementById('services').scrollIntoView({behavior: 'smooth'})
-  }
+    useEffect(() => {
+    window.addEventListener('scroll', ()=>{
+        window.scrollY > 60 ? setIsActive(true) : setIsActive(false)
+    })
+    }, [])
 
-
- useEffect(() => {
-   window.addEventListener('scroll', ()=>{
-    window.scrollY > 60 ? setIsActive(true) : setIsActive(false)
-   })
- }, [])
 
 
   return (
@@ -40,12 +36,7 @@ function App() {
         <header id='header' className={`${isActive && 'fixed z-50 inset-0 top-0 backdrop-blur'} h-24 bg-white/10`}>
             <div className={`flex flex-col md:items-center items-start md:justify-center justify-start h-full pl-4 md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
                 <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
-                <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span> | <span>Freelancer</span></p>
-                <p onClick={scrollTo} className='text-sm lowercase space-x-2'>
-                    <a href="#" className='underline'>
-                        need a website?
-                    </a>
-                </p>
+                <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span> | <span>Freelancer</span></p>              
                 <button onClick={handleToggle} className='bg-stone-200 dark:bg-white/40 dark:text-white rounded-full md:right-10 right-5 absolute items-center top-1/ sm: top-1/4  p-1 sm:p-2'>{darkMode? <CiDark className=''/> : <GoSun />}</button>
             </div>
         </header>
@@ -156,7 +147,7 @@ function App() {
                     </a>
                 </div> 
                 <p className='py-2 text-stone-500'>&copy; Kennytech. All right reserved.</p>
-                <a onClick={scrollToTop} href='#header' className='flex flex-col items-center right-5 absolute bottom-4'><IoIosArrowUp className='bg-black shadow text-white rounded-lg' size={20}/></a>     
+                <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col items-center right-5 bottom-4' : "hidden"} `}><IoIosArrowUp className='bg-black shadow text-white rounded-lg' size={30}/></a>     
             </div>
         </footer>
     </div>
