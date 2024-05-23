@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className={`${darkMode && 'dark'} relative transition-all`}>
-        <header id='header' className={`${isActive && 'fixed z-40 inset-0 top-0 backdrop-blur'} h-24 bg-white/10`}>
+        <header id='header' className={`${isActive && 'fixed z-40 inset-0 top-0 backdrop-blur'} h-24 bg-white`}>
             <div className={`flex flex-col md:items-center items-start md:justify-center justify-start h-full pl-4 md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
                 <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span> | <span>Freelancer</span></p>              
