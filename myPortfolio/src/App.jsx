@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className={`${darkMode && 'dark'} relative transition-all`}>
-        <header id='header' className={`${isActive && 'fixed z-50 inset-0 top-0 backdrop-blur'} h-24 bg-white/10`}>
+        <header id='header' className={`${isActive && 'fixed z-40 inset-0 top-0 backdrop-blur'} h-24 bg-white/10`}>
             <div className={`flex flex-col md:items-center items-start md:justify-center justify-start h-full pl-4 md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
                 <h1 className='font-extrabold text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize ' ><span>web developer</span> | <span>tech enthusiast</span> | <span>Freelancer</span></p>              
@@ -77,7 +77,7 @@ function App() {
         </section>
         <section id='services' className='dark:bg-black dark:text-white '>
             <div className='px-2 relative'>
-                <div className='sticky top-24 z-10 bg-white text-black dark:bg-black dark:text-white '>
+                <div className='sticky top-0 z-50 bg-white text-black dark:bg-black dark:text-white '>
                     <h1 className='text-2xl font-bold flex items-center py-3 px-2'><GiProcessor className='mr-1' />How it works</h1>
                     <p className='p-2'>-Here is my recipe for a project</p>
                 </div>
@@ -97,7 +97,7 @@ function App() {
         </section>
         <section id='projects' className='dark:bg-black dark:text-white'>
             <div className='px-5 py-5 relative'>
-                <h1 className='text-2xl font-bold flex items-center sticky top-0 bg-white dark:bg-black dark:text-white'><TfiTime className='mr-1' />Recent Projects</h1>
+                <h1 className='text-2xl font-bold flex items-center sticky top-0 bg-white dark:bg-black dark:text-white'><TfiTime className='mr-1' />Recent Project</h1>
                 <div className='py-4'>
                     {
                         projects.map((project)=>{
@@ -117,7 +117,7 @@ function App() {
                     }
                 </div>
                 <p className=' hover:font-bold transition-all underline decoration-purple-600 decoration-2 underline-offset-2 font-mono'>
-                    <a href="http://github.com/victoryBenson" className=''>see more</a>
+                    <a href="https://github.com/victoryBenson/" target='_blank' className=''>see more</a>
                 </p>
             </div>
         </section>
@@ -147,7 +147,7 @@ function App() {
                     </a>
                 </div> 
                 <p className='py-2 text-stone-500'>&copy; Kennytech. All right reserved.</p>
-                <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col items-center right-5 bottom-4' : "hidden"} `}><IoIosArrowUp className='bg-black shadow text-white rounded-lg' size={30}/></a>     
+                <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col z-[99] items-center right-5 bottom-4' : "hidden"} `}><IoIosArrowUp className='bg-purple-600 shadow text-white rounded-full' size={40}/></a>     
             </div>
         </footer>
     </div>
