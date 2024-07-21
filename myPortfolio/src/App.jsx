@@ -84,18 +84,18 @@ function App() {
         </section>
         <section id='projects' className='dark:bg-black dark:text-white flex justify-center py-10'>
             <div className='px-5 py-5 relative'>
-                <h1 className='text-2xl font-bold flex items-center justify-center sticky top-0 bg-white dark:bg-black dark:text-white'><TfiTime className='mr-1' />recent project</h1>
-                <div className='py-4'>
+                <h1 className='text-2xl font-bold flex items-center justify-center sticky top-0 bg-white dark:bg-black dark:text-white'><TfiTime className='mr-1' />Recent Projects</h1>
+                <div className='py-4 flex flex-wrap items-center justify-center gap-4'>
                     {
                         projects.map((project)=>{
                             return(
-                                <div key={project.id} className=' md:w-80 shadow border border-purple-100/10 rounded'>
-                                    <p className='w-full h-40'><img className='rounded h-full w-full object-cover object-top' src={project.image} alt="image" /></p>
-                                    <div className='p-3'>
+                                <div key={project.id} className=' md:w-80 max- h-[24rem] overflow-hidden  border border-purple-100/50 rounded-2xl'>
+                                    <p className='w-full h-1/2'><img className='rounded h-full w-full object-cover object-top' src={project.image} alt="image" /></p>
+                                    <div className='p-3 h-1/2'>
                                         <p className='font-bold uppercase text-purple-600'>{project.name}</p>
-                                        <p className='font-mono'>{project.description}</p>
+                                        <p className='text-sm'>{project.description}</p>
                                         <p className='flex text-center py-2 transition-all'>
-                                            <a href={project.link} className='border border-purple-600 w-full h-full p-2 rounded hover:bg-purple-600 hover:text-white hover:shadow'>Explore</a>
+                                            <a href={project.link} className='border border-purple-600/40 w-full h-full p-2 rounded-lg hover:bg-purple-600 hover:text-white hover:shadow'>Explore</a>
                                         </p>
                                     </div>
                                 </div>
