@@ -13,6 +13,9 @@ export default {
       square: 'square',
       roman: 'upper-roman',
     },
+    fontFamily:{
+      poppins: ["Poppins", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
