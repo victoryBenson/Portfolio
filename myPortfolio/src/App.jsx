@@ -110,27 +110,27 @@ function App() {
         </section>
         <footer className='bg-black text-white border-t border-stone-100/10'>
             <div className='py-5 self-center flex flex-col items-center justify-center'>
-                <h1 className='text-xl font-bold px-2 py-3 flex items-center'><TfiLink />Connect with Victory</h1>
+                <h1 className='text-xl font-bold px-2 py-3 flex items-center'><TfiLink />Connect with me</h1>
                 <div className='flex flex-wrap transition-all '>
                     <a href="https://github.com/victoryBenson" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsGithub size={20} className=''/>
-                        <span className = "text-stone-500">Github</span>
+                        <span className = "text-stone-500"></span>
                     </a>
                     <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsLinkedin size={20} className='text-[#3741a4]'/>
-                        <span className = "text-stone-500">LinkedIn</span>
+                        <span className = "text-stone-500"></span>
                     </a>
                     <a href="https://api.whatsapp.com/send?phone=+234-8136878980" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsWhatsapp size={20} className='text-[#50eb81]'/>
-                        <span className = "text-stone-500">Whatsapp</span>
+                        <span className = "text-stone-500"></span>
                     </a>
                     <a href='mailto:victorybenson98@gmail.com' className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7 flex flex-col items-center'/>
-                        <span className = "text-stone-500">Gmail</span>
+                        <span className = "text-stone-500"></span>
                     </a>
                     <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <FaXTwitter size={20} className='text-[#4691b0]'/>
-                        <span className = "text-stone-500">X</span>
+                        <span className = "text-stone-500"></span>
                     </a>
                 </div> 
                 <div className="flex items-center text-stone-400">Built with <CiHeart className='mx-1 text-purple-600' /> by Kennytech</div>
