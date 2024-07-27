@@ -109,8 +109,8 @@ function App() {
             </div>
         </section>
         <footer className='bg-black text-white border-t border-stone-100/10'>
-            <div className='py-5 self-center flex flex-col items-center justify-center'>
-                <h1 className='text-xl font-bold px-2 py-3 flex items-center'><TfiLink />Connect with me</h1>
+            <div className='py-5 self-center flex flex-col items-center justify-center space-y-5'>
+                <h1 className='text-xl font-bold px-2 py-3 flex items-center text-stone-500'><TfiLink />Connect with me</h1>
                 <div className='flex flex-wrap transition-all '>
                     <a href="https://github.com/victoryBenson" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsGithub size={20} className=''/>
@@ -133,7 +133,7 @@ function App() {
                         <span className = "text-stone-500"></span>
                     </a>
                 </div> 
-                <div className="flex items-center text-stone-400">Built with <CiHeart className='mx-1 text-purple-600' /> by Kennytech</div>
+                <div className="flex items-center text-stone-400">Built with <CiHeart className='mx-1 text-purple-600' size={20} /> by Kennytech</div>
                 <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col z-[99] items-center right-5 bottom-4' : "hidden"} `}><IoIosArrowUp className='bg-purple-600 shadow text-white rounded-full' size={40}/></a>     
             </div>
         </footer>
