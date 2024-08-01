@@ -10,7 +10,7 @@ export const projects = [
         id: 2,
         name: "Will_Be_There",
         image: "https://i.postimg.cc/L89gPrN2/Rectangle-5.webp",
-        link: "will-be-there.vercel.app",
+        link: "https://will-be-there.vercel.app",
         description: "Arit Developer Cycle Hackathon: An online RSVP service that allows registered users to create events, share the link with their friends, and have their friends indicate whether they are attending or not"
     },
     {

@@ -7,7 +7,7 @@ import { TfiLink, TfiTime } from "react-icons/tfi";
 import { BsFillEnvelopeAtFill, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { projects } from './component/works';
 import { IoIosArrowUp } from "react-icons/io";
-
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -50,7 +50,7 @@ function App() {
                 <div className='w-60 h-60 p-2 rounded-full overflow-hidden'>
                     <img className='h-full w-full object-cover object-top rounded-full' src="https://i.postimg.cc/j5HgFkj3/o-Pp8-Jwf-R-400x400-1.jpg" alt="profile image" />
                 </div>
-                <div className='p-3 text-center w-[100%] md:w-[80] lg:w-[50%]'>
+                <div className='text-center w-[100%] md:w-[80] lg:w-[50%]'>
                     <h1 className='font-bold text-3xl'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Software Developer.</span> </h1>
                     <div className='py-5 text-lg '>
                         <p className=''>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
@@ -59,24 +59,29 @@ function App() {
                 </div>
             </div>
         </section>
+        <section className='flex justify-center mb-5 '>
+            <div>
+                <a href="https://files.fm/f/hfqec6jvaf" target="_blank" className='flex items-center justify-center bg-purple-600 p-2 text-white rounded-lg hover:bg-opacity-90'><IoDocumentTextOutline/>Resume</a>
+            </div>
+        </section>
         <section id='contact' className='dark:bg-black dark:text-white flex items-center justify-center'>
             <div className=' px-1 '>
                 <h1 className='text-2xl font-bold px-2 flex items-center'><TfiLink />connect with me</h1>
                 <div className='flex flex-wrap transition-all '>
                     
-                    <a href="https://api.whatsapp.com/send?phone=+234-8136878980" className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
+                    <a href="https://api.whatsapp.com/send?phone=+234-8136878980" target='_blank' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsWhatsapp size={20} className='text-[#50eb81]'/>
                     </a>
-                    <a href='mailto:victorybenson98@gmail.com' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
+                    <a href='mailto:victorybenson98@gmail.com' target='_blank' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7'/>
                     </a>
-                    <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
+                    <a href='https://x.com/Kennytech98?t=C_b3KzKNrVTc1E_2Bh47eQ&s=09' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2' target='_blank'>
                         <FaXTwitter size={20} className='text-[#4691b0]'/>
                     </a>
-                    <a href="https://github.com/victoryBenson" className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
+                    <a href="https://github.com/victoryBenson" target='_blank' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsGithub size={20} className=''/>
                     </a>
-                    <a className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
+                    <a href='https://www.linkedin.com/in/kenny-victory-572773251' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2' target='_blank'>
                         <BsLinkedin size={20} className='text-[#3741a4]'/>
                     </a>
                 </div>      
@@ -112,23 +117,23 @@ function App() {
             <div className='py-5 self-center flex flex-col items-center justify-center space-y-5'>
                 <h1 className='text-xl font-bold px-2 py-3 flex items-center text-stone-500'><TfiLink />Connect with me</h1>
                 <div className='flex flex-wrap transition-all '>
-                    <a href="https://github.com/victoryBenson" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a href="https://github.com/victoryBenson" target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsGithub size={20} className=''/>
                         <span className = "text-stone-500"></span>
                     </a>
-                    <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a href='https://www.linkedin.com/in/kenny-victory-572773251' target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsLinkedin size={20} className='text-[#3741a4]'/>
                         <span className = "text-stone-500"></span>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=+234-8136878980" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a href="https://api.whatsapp.com/send?phone=+234-8136878980" target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsWhatsapp size={20} className='text-[#50eb81]'/>
                         <span className = "text-stone-500"></span>
                     </a>
-                    <a href='mailto:victorybenson98@gmail.com' className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a href='mailto:victorybenson98@gmail.com' target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7 flex flex-col items-center'/>
                         <span className = "text-stone-500"></span>
                     </a>
-                    <a className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    <a href='https://x.com/Kennytech98?t=C_b3KzKNrVTc1E_2Bh47eQ&s=09' target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <FaXTwitter size={20} className='text-[#4691b0]'/>
                         <span className = "text-stone-500"></span>
                     </a>
