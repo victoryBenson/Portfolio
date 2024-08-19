@@ -42,7 +42,7 @@ function App() {
 
 
   return (
-    <div className={`${darkMode && 'dark'} relative transition-all`}>
+    <div className={`${darkMode && 'dark bg-black'} relative transition-all`}>
         <header id='header' className={`${isActive && 'fixed z-40 inset-0 top-0'} h-24 bg-white`}>
             <div className={`flex flex-col items-center justify-center h-full md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
                 <h1 className='font-extrabold text-lg md:text-3xl '>victory <span className='text-purple-600'>K</span> benson </h1>
@@ -153,7 +153,7 @@ function App() {
                                     <p className='w-full h-1/2'><img className='rounded h-full w-full object-cover object-top' src={project.image} alt="image" /></p>
                                     <div className='p-3 h-1/2'>
                                         <p className='font-bold uppercase text-purple-600'>{project.name}</p>
-                                        <p className='text-sm'>{project.description}</p>
+                                        <p className='text-sm flex justify-end '>{project?.description}</p>
                                         <p className='flex text-center py-2 transition-all'>
                                             <a href={project.link} className='border border-purple-600/40 w-full h-full p-2 rounded-lg hover:bg-purple-600 hover:text-white hover:shadow'>Explore</a>
                                         </p>
