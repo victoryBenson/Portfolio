@@ -4,7 +4,7 @@ export const projects = [
         name: "Universe_Blog",
         image: "https://i.postimg.cc/bJVwb3Dw/782c50ce.jpg",
         link: "https://universeblog.vercel.app/",
-        description: "Whether you're passionate about software development, emerging technologies, or technical tutorials, this blog allows you to connect with like-minded posts and individuals..."
+        description: "This is a tech blog that covers topics related to technology, including the latest trends, innovations, products, and industry insights. "
     },
     {
         id: 2,

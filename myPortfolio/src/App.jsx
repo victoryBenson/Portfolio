@@ -2,12 +2,15 @@
 import { useEffect, useState } from 'react'
 import { GoSun } from "react-icons/go";
 import { CiDark, CiHeart} from "react-icons/ci";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaCss3, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaReact, FaSlack, FaXTwitter } from "react-icons/fa6";
 import { TfiLink, TfiTime } from "react-icons/tfi";
 import { BsFillEnvelopeAtFill, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { projects } from './component/works';
-import { IoIosArrowUp } from "react-icons/io";
-import { IoDocumentTextOutline } from "react-icons/io5";
+import { IoIosArrowUp, IoLogoJavascript } from "react-icons/io";
+import { IoDocumentTextOutline, IoLogoFirebase } from "react-icons/io5";
+import { SiExpress, SiInsomnia, SiMongodb, SiPostman, SiRedux, SiRender, SiSwagger, SiTailwindcss, SiTypescript, SiVisualstudiocode, SiVite } from "react-icons/si";
+import { TbBrandNextjs, TbBrandVercel, TbCloudCode } from "react-icons/tb";
+
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -46,11 +49,11 @@ function App() {
             </div>
         </header>
         <section id='hero' className='flex  justify-center dark:bg-black dark:text-white'>
-            <div className='flex flex-col justify-between items-center w-full h-full md:px-4 py-5 px-1 '>
-                <div className='w-60 h-60 p-2 rounded-full overflow-hidden'>
-                    <img className='h-full w-full object-cover object-top rounded-full' src="https://i.postimg.cc/j5HgFkj3/o-Pp8-Jwf-R-400x400-1.jpg" alt="profile image" />
+            <div className='flex flex-col justify-between items-center w-full h-full md:px-4 px-1 pt-5'>
+                <div className='w-60 h-60 p-2 rounded-2xl overflow-hidden shadow border bg-white'>
+                    <img className='h-full w-full object-cover object-top rounded-2xl shadow' src="https://i.postimg.cc/qRLf4JMK/20240613-192347.jpg" alt="profile image" />
                 </div>
-                <div className='text-center w-[100%] md:w-[80] lg:w-[50%]'>
+                <div className='text-center w-[100%] md:w-[80] lg:w-[50%] py-2'>
                     <h1 className='font-bold text-3xl'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Software Developer.</span> </h1>
                     <div className='py-5 text-lg '>
                         <p className=''>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
@@ -59,12 +62,12 @@ function App() {
                 </div>
             </div>
         </section>
-        <section className='flex justify-center mb-5 '>
+        <section className='flex justify-center pb-5 dark:bg-black '>
             <div>
                 <a href="https://files.fm/f/hfqec6jvaf" target="_blank" className='flex items-center justify-center bg-purple-600 p-2 text-white rounded-lg hover:bg-opacity-90'><IoDocumentTextOutline/>Resume</a>
             </div>
         </section>
-        <section id='contact' className='dark:bg-black dark:text-white flex items-center justify-center'>
+        <section id='contact' className='dark:bg-black dark:text-white flex items-center justify-center  md:py-5'>
             <div className=' px-1 '>
                 <h1 className='text-2xl font-bold px-2 flex items-center'><TfiLink />connect with me</h1>
                 <div className='flex flex-wrap transition-all '>
@@ -87,7 +90,57 @@ function App() {
                 </div>      
             </div>
         </section>
-        <section id='projects' className='dark:bg-black dark:text-white flex justify-center py-10'>
+        <section id='tech-skill' className='flex items-center justify-center sticky flex-col dark:bg-black py-10'>
+            <div className='text-2xl font-bold  top-0 bg-white dark:bg-black dark:text-white capitalize'>my tech skills/Tools</div>
+            <div>
+                <div className='flex flex-col items-center py-2'>
+                    <span className='dark:text-white'>FrontEnd tools:</span>
+                    <div className='flex gap-2 flex-wrap items-center justify-center'>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaHtml5 fontSize={20}/> HTML</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaCss3 fontSize={20}/> CSS</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiTailwindcss fontSize={20}/> TailwindCss</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><IoLogoJavascript fontSize={20}/> Javascript</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaReact fontSize={20}/> React.js</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiTypescript fontSize={20}/> Typescript</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbBrandNextjs size={20}/>Next.js</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaFigma size={20} />Figma</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiRedux />Redux</span>
+                    </div>
+                </div>
+                <div className='flex flex-col items-center py-2'>
+                    <span className='dark:text-white'>BackEnd Technologies & Frameworks:</span>
+                    <div className='flex gap-2 flex-wrap items-center'>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaNodeJs fontSize={20}/> NodeJs</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiExpress fontSize={20}/> Express</span>
+                    </div>
+                </div>
+                <div className='flex flex-col items-center py-2'>
+                    <span className='dark:text-white'>Database:</span>
+                    <div className='flex gap-2 flex-wrap items-center'>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiMongodb size={20}/> MongoDB</span>
+                    </div>
+                </div>
+                <div className='flex flex-col items-center py-2'>
+                    <span className='dark:text-white'>Development Tools & Platforms:</span>
+                    <div className='flex gap-2 flex-wrap items-center justify-center'>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbCloudCode size={20}/>Cloudinary</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGitAlt fontSize={20}/>Git</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGithub />Github</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiVisualstudiocode />Visual Studio Code</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><IoLogoFirebase fontSize={20}/>Firebase</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaSlack fontSize={20}/>Slack</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiPostman />Postman</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiVite />Vite</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiRender />Render</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbBrandVercel size={20}/>Vercel</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiSwagger size={20}/>Swagger</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiInsomnia />Insomnia</span>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id='projects' className='dark:bg-black dark:text-white flex justify-center md:py-10'>
             <div className='px-5 py-5 relative'>
                 <h1 className='text-2xl font-bold flex items-center justify-center sticky top-0 bg-white dark:bg-black dark:text-white'><TfiTime className='mr-1' />Recent Projects</h1>
                 <div className='py-4 flex flex-wrap items-center justify-center gap-4'>
@@ -113,9 +166,9 @@ function App() {
                 </p>
             </div>
         </section>
-        <footer className='bg-black text-white border-t border-stone-100/10'>
+        <footer className='bg-purple-600 dark:bg-black text-white border-t border-stone-100/10'>
             <div className='py-5 self-center flex flex-col items-center justify-center space-y-5'>
-                <h1 className='text-xl font-bold px-2 py-3 flex items-center text-stone-500'><TfiLink />Connect with me</h1>
+                <h1 className='text-xl font-bold px-2 py-3 flex items-center text-white dark:text-stone-500'><TfiLink />Connect with me</h1>
                 <div className='flex flex-wrap transition-all '>
                     <a href="https://github.com/victoryBenson" target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsGithub size={20} className=''/>
@@ -138,7 +191,7 @@ function App() {
                         <span className = "text-stone-500"></span>
                     </a>
                 </div> 
-                <div className="flex items-center text-stone-400">Built with <CiHeart className='mx-1 text-purple-600' size={20} /> by Kennytech</div>
+                <div className="flex items-center text-white dark:text-stone-400">Designed & Built with <CiHeart className='mx-1 text-purple-600' size={20} /> by Kennytech</div>
                 <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col z-[99] items-center right-5 bottom-4' : "hidden"} `}><IoIosArrowUp className='bg-purple-600 shadow text-white rounded-full' size={40}/></a>     
             </div>
         </footer>
