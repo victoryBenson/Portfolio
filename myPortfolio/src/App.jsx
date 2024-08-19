@@ -10,11 +10,20 @@ import { IoIosArrowUp, IoLogoJavascript } from "react-icons/io";
 import { IoDocumentTextOutline, IoLogoFirebase } from "react-icons/io5";
 import { SiExpress, SiInsomnia, SiMongodb, SiPostman, SiRedux, SiRender, SiSwagger, SiTailwindcss, SiTypescript, SiVisualstudiocode, SiVite } from "react-icons/si";
 import { TbBrandNextjs, TbBrandVercel, TbCloudCode } from "react-icons/tb";
-
+import AOS from 'aos';
+import "aos/dist/aos.css"
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
     const [isActive, setIsActive] = useState(false)
+
+
+    //animation on scroll
+    useEffect(() => {
+        AOS.init({
+        duration: 500
+        })    
+    },[])
 
     const handleToggle = () => {
         setDarkMode(!darkMode)
@@ -36,25 +45,18 @@ function App() {
     <div className={`${darkMode && 'dark'} relative transition-all`}>
         <header id='header' className={`${isActive && 'fixed z-40 inset-0 top-0'} h-24 bg-white`}>
             <div className={`flex flex-col items-center justify-center h-full md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
-                {
-                    isActive ? (
-                        <h1 className='font-extrabold text-lg md:text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
-                    ):
-                    (
-                        <h1 className='font-extrabold text-lg md:text-3xl '>victory benson <span className='text-purple-600'>.K</span></h1>
-                    )
-                }
+                <h1 className='font-extrabold text-lg md:text-3xl '>victory <span className='text-purple-600'>K</span> benson </h1>
                 <p className='text-purple-600 dark:text-violet-400 capitalize text-center' ><span>Software developer</span> | <span>tech enthusiast</span> | <span>Freelancer</span></p>              
                 <button onClick={handleToggle} className='bg-stone-200 dark:bg-white/40 dark:text-white rounded-full md:right-10 right-5 absolute items-center top-2  p-1 sm:p-2'>{darkMode? <CiDark className=''/> : <GoSun />}</button>
             </div>
         </header>
-        <section id='hero' className='flex  justify-center dark:bg-black dark:text-white'>
+        <section id='hero' data-aos="zom-in" className='flex  justify-center dark:bg-black dark:text-white'>
             <div className='flex flex-col justify-between items-center w-full h-full md:px-4 px-1 pt-5'>
                 <div className='w-60 h-60 p-2 rounded-2xl overflow-hidden shadow border bg-white'>
                     <img className='h-full w-full object-cover object-top rounded-2xl shadow' src="https://i.postimg.cc/qRLf4JMK/20240613-192347.jpg" alt="profile image" />
                 </div>
                 <div className='text-center w-[100%] md:w-[80] lg:w-[50%] py-2'>
-                    <h1 className='font-bold text-3xl'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Software Developer.</span> </h1>
+                    <h1 className=' text-3xl font-semibold'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Software Developer.</span> </h1>
                     <div className='py-5 text-lg '>
                         <p className=''>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
                         <p> Feel free to contact me, let's build something amazing together!</p>
@@ -67,7 +69,7 @@ function App() {
                 <a href="https://files.fm/f/hfqec6jvaf" target="_blank" className='flex items-center justify-center bg-purple-600 p-2 text-white rounded-lg hover:bg-opacity-90'><IoDocumentTextOutline/>Resume</a>
             </div>
         </section>
-        <section id='contact' className='dark:bg-black dark:text-white flex items-center justify-center  md:py-5'>
+        <section id='contact' data-aos="zoom-in" className='dark:bg-black dark:text-white flex items-center justify-center  md:py-5'>
             <div className=' px-1 '>
                 <h1 className='text-2xl font-bold px-2 flex items-center'><TfiLink />connect with me</h1>
                 <div className='flex flex-wrap transition-all '>
@@ -90,7 +92,7 @@ function App() {
                 </div>      
             </div>
         </section>
-        <section id='tech-skill' className='flex items-center justify-center sticky flex-col dark:bg-black py-10'>
+        <section id='tech-skill' data-aos="fade-up" className='flex items-center justify-center sticky flex-col dark:bg-black py-10'>
             <div className='text-2xl font-bold  top-0 bg-white dark:bg-black dark:text-white capitalize'>my tech skills/Tools</div>
             <div>
                 <div className='flex flex-col items-center py-2'>
@@ -109,9 +111,12 @@ function App() {
                 </div>
                 <div className='flex flex-col items-center py-2'>
                     <span className='dark:text-white'>BackEnd Technologies & Frameworks:</span>
-                    <div className='flex gap-2 flex-wrap items-center'>
+                    <div className='flex gap-2 flex-wrap items-center justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaNodeJs fontSize={20}/> NodeJs</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiExpress fontSize={20}/> Express</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiInsomnia />Insomnia</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiPostman />Postman</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><IoLogoFirebase fontSize={20}/>Firebase</span>
                     </div>
                 </div>
                 <div className='flex flex-col items-center py-2'>
@@ -127,20 +132,17 @@ function App() {
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGitAlt fontSize={20}/>Git</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGithub />Github</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiVisualstudiocode />Visual Studio Code</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><IoLogoFirebase fontSize={20}/>Firebase</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaSlack fontSize={20}/>Slack</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiPostman />Postman</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiVite />Vite</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiRender />Render</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbBrandVercel size={20}/>Vercel</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiSwagger size={20}/>Swagger</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiInsomnia />Insomnia</span>
                     </div>
                 </div>
                 
             </div>
         </section>
-        <section id='projects' className='dark:bg-black dark:text-white flex justify-center md:py-10'>
+        <section id='projects' data-aos="fade-up" className='dark:bg-black dark:text-white flex justify-center md:py-10'>
             <div className='px-5 py-5 relative'>
                 <h1 className='text-2xl font-bold flex items-center justify-center sticky top-0 bg-white dark:bg-black dark:text-white'><TfiTime className='mr-1' />Recent Projects</h1>
                 <div className='py-4 flex flex-wrap items-center justify-center gap-4'>
@@ -191,8 +193,8 @@ function App() {
                         <span className = "text-stone-500"></span>
                     </a>
                 </div> 
-                <div className="flex items-center text-white dark:text-stone-400">Designed & Built with <CiHeart className='mx-1 text-purple-600' size={20} /> by Kennytech</div>
-                <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col z-[99] items-center right-5 bottom-4' : "hidden"} `}><IoIosArrowUp className='bg-purple-600 shadow text-white rounded-full' size={40}/></a>     
+                <div className="flex items-center text-white dark:text-stone-400">Designed & Built with <CiHeart className='mx-1 text-white dark:text-purple-600' size={20} /> by Kennytech</div>
+                <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col z-[99] items-center right-5 bottom-4' : "hidden"} `}><IoIosArrowUp className='bg-white dark:bg-purple-600 shadow text-white rounded-full' size={40}/></a>     
             </div>
         </footer>
     </div>
