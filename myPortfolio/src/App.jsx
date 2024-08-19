@@ -194,7 +194,7 @@ function App() {
                     </a>
                 </div> 
                 <div className="flex items-center text-white dark:text-stone-400">Designed & Built with <CiHeart className='mx-1 text-white dark:text-purple-600' size={20} /> by Kennytech</div>
-                <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col z-[99] items-center right-5 bottom-4' : "hidden"} `}><IoIosArrowUp className='bg-white dark:bg-purple-600 shadow text-white rounded-full' size={40}/></a>     
+                <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col z-[99] items-center right-5 bottom-14' : "hidden"} `}><IoIosArrowUp className='bg-white dark:bg-purple-600 shadow text-white rounded-full' size={40}/></a>     
             </div>
         </footer>
     </div>
