@@ -4,7 +4,7 @@ import { GoSun } from "react-icons/go";
 import { CiDark, CiHeart} from "react-icons/ci";
 import { FaCss3, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaNodeJs, FaReact, FaSlack, FaXTwitter } from "react-icons/fa6";
 import { TfiLink, TfiTime } from "react-icons/tfi";
-import { BsFillEnvelopeAtFill, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { BsFillEnvelopeAtFill, BsGithub, BsLinkedin} from "react-icons/bs";
 import { projects } from './component/works';
 import { IoIosArrowUp, IoLogoJavascript } from "react-icons/io";
 import { IoDocumentTextOutline, IoLogoFirebase } from "react-icons/io5";
@@ -72,11 +72,7 @@ function App() {
         <section id='contact' data-aos="zoom-in" className='dark:bg-black dark:text-white flex items-center justify-center  md:py-5'>
             <div className=' px-1 '>
                 <h1 className='text-2xl font-bold px-2 flex items-center'><TfiLink />connect with me</h1>
-                <div className='flex flex-wrap transition-all '>
-                    
-                    <a href="https://api.whatsapp.com/send?phone=+234-8136878980" target='_blank' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
-                        <BsWhatsapp size={20} className='text-[#50eb81]'/>
-                    </a>
+                <div className='flex flex-wrap transition-all'>
                     <a href='mailto:victorybenson98@gmail.com' target='_blank' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7'/>
                     </a>
@@ -163,7 +159,7 @@ function App() {
                         })
                     }
                 </div>
-                <p className=' hover:font-bold transition-all underline decoration-purple-600 decoration-2 underline-offset-2 font-mono'>
+                <p className='text-center hover:font-bold transition-all underline decoration-purple-600 decoration-2 underline-offset-2 font-mono'>
                     <a href="https://github.com/victoryBenson/" target='_blank' className=''>see more</a>
                 </p>
             </div>
@@ -180,10 +176,10 @@ function App() {
                         <BsLinkedin size={20} className='text-[#3741a4]'/>
                         <span className = "text-stone-500"></span>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=+234-8136878980" target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
+                    {/* <a href="https://api.whatsapp.com/send?phone=+234-8136878980" target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsWhatsapp size={20} className='text-[#50eb81]'/>
                         <span className = "text-stone-500"></span>
-                    </a>
+                    </a> */}
                     <a href='mailto:victorybenson98@gmail.com' target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7 flex flex-col items-center'/>
                         <span className = "text-stone-500"></span>
