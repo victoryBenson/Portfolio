@@ -66,7 +66,15 @@ function App() {
         </section>
         <section className='flex justify-center pb-5 dark:bg-black '>
             <div>
-                <a href="https://files.fm/f/hfqec6jvaf" target="_blank" className='flex items-center justify-center bg-purple-600 p-2 text-white rounded-lg hover:bg-opacity-90'><IoDocumentTextOutline/>Resume</a>
+                {/* <a href="https://files.fm/f/hfqec6jvaf" target="_blank" className='flex items-center justify-center bg-purple-600 p-2 text-white rounded-lg hover:bg-opacity-90'><IoDocumentTextOutline/>Resume</a> */}
+                <a 
+                    href="https://docs.google.com/document/d/1NwCnkT_UIywNnC2nf1WoBeS-IJACIh21OpYf2UIewr0/edit?usp=sharing" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className='flex items-center justify-center bg-purple-600 p-2 text-white rounded-lg hover:bg-opacity-90'
+                    >
+                        <IoDocumentTextOutline/>Resume
+                </a>
             </div>
         </section>
         <section id='contact' data-aos="zoom-in" className='dark:bg-black dark:text-white flex items-center justify-center  md:py-5'>
@@ -92,7 +100,7 @@ function App() {
             <div className='text-2xl font-bold  top-0 bg-white dark:bg-black dark:text-white capitalize'>my tech skills/Tools</div>
             <div>
                 <div className='flex flex-col items-center py-2'>
-                    <span className='dark:text-white'>FrontEnd tools:</span>
+                    <span className='dark:text-white font-bold'>FrontEnd tools:</span>
                     <div className='flex gap-2 flex-wrap items-center justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaHtml5 fontSize={20}/> HTML</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaCss3 fontSize={20}/> CSS</span>
@@ -106,7 +114,7 @@ function App() {
                     </div>
                 </div>
                 <div className='flex flex-col items-center py-2'>
-                    <span className='dark:text-white'>BackEnd Technologies & Frameworks:</span>
+                    <span className='dark:text-white font-bold'>BackEnd Technologies & Frameworks:</span>
                     <div className='flex gap-2 flex-wrap items-center justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaNodeJs fontSize={20}/> NodeJs</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiExpress fontSize={20}/> Express</span>
@@ -116,13 +124,13 @@ function App() {
                     </div>
                 </div>
                 <div className='flex flex-col items-center py-2'>
-                    <span className='dark:text-white'>Database:</span>
+                    <span className='dark:text-white font-bold'>Database:</span>
                     <div className='flex gap-2 flex-wrap items-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiMongodb size={20}/> MongoDB</span>
                     </div>
                 </div>
                 <div className='flex flex-col items-center py-2'>
-                    <span className='dark:text-white'>Development Tools & Platforms:</span>
+                    <span className='dark:text-white font-bold'>Development Tools & Platforms:</span>
                     <div className='flex gap-2 flex-wrap items-center justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbCloudCode size={20}/>Cloudinary</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGitAlt fontSize={20}/>Git</span>
