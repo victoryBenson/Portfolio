@@ -79,7 +79,7 @@ function App() {
         </section>
         <section id='contact' data-aos="zoom-in" className='dark:bg-black dark:text-white flex items-center justify-center  md:py-5'>
             <div className=' px-1 '>
-                <h1 className='text-2xl font-bold px-2 flex items-center'><TfiLink />connect with me</h1>
+                <h1 className='text-2xl font-bold px-2 flex items-center'><TfiLink />Connect with me</h1>
                 <div className='flex flex-wrap transition-all'>
                     <a href='mailto:victorybenson98@gmail.com' target='_blank' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7'/>
@@ -100,7 +100,7 @@ function App() {
             <div className='text-2xl font-bold  top-0 bg-white dark:bg-black dark:text-white capitalize'>my tech skills/Tools</div>
             <div>
                 <div className='flex flex-col items-center py-2'>
-                    <span className='dark:text-white font-bold'>FrontEnd tools:</span>
+                    <span className='dark:text-white font-bold'>Frontend tools:</span>
                     <div className='flex gap-2 flex-wrap items-center justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaHtml5 fontSize={20}/> HTML</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaCss3 fontSize={20}/> CSS</span>
@@ -114,7 +114,7 @@ function App() {
                     </div>
                 </div>
                 <div className='flex flex-col items-center py-2'>
-                    <span className='dark:text-white font-bold'>BackEnd Technologies & Frameworks:</span>
+                    <span className='dark:text-white font-bold'>Backend Technologies & Frameworks:</span>
                     <div className='flex gap-2 flex-wrap items-center justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaNodeJs fontSize={20}/> NodeJs</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiExpress fontSize={20}/> Express</span>
@@ -124,12 +124,21 @@ function App() {
                     </div>
                 </div>
                 <div className='flex flex-col items-center py-2'>
-                    <span className='dark:text-white font-bold'>Database:</span>
+                    <span className='dark:text-white font-bold'>Database & Development Tools/Platforms:</span>
                     <div className='flex gap-2 flex-wrap items-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiMongodb size={20}/> MongoDB</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbCloudCode size={20}/>Cloudinary</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGitAlt fontSize={20}/>Git</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGithub />Github</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiVisualstudiocode />Visual Studio Code</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaSlack fontSize={20}/>Slack</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiVite />Vite</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiRender />Render</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbBrandVercel size={20}/>Vercel</span>
+                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiSwagger size={20}/>Swagger</span>
                     </div>
                 </div>
-                <div className='flex flex-col items-center py-2'>
+                <div className='hidden flex-col items-center py-2'>
                     <span className='dark:text-white font-bold'>Development Tools & Platforms:</span>
                     <div className='flex gap-2 flex-wrap items-center justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbCloudCode size={20}/>Cloudinary</span>
