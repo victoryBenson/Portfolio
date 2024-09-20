@@ -46,7 +46,11 @@ function App() {
         <header id='header' className={`${isActive && 'fixed z-40 inset-0 top-0'} h-24 bg-white`}>
             <div className={`flex flex-col items-center justify-center h-full md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
                 <h1 className='font-extrabold text-lg md:text-3xl '>victory <span className='text-purple-600'>.K</span> benson </h1>
-                <p className='text-purple-600 dark:text-violet-400 capitalize text-center' ><span>Software developer</span> | <span>tech enthusiast</span> | <span>Freelancer</span></p>              
+                <p className='text-purple-600 dark:text-violet-400 capitalize text-center' >
+                    <span className='text-sm md:text-base'>Software developer</span> | 
+                    <span className='text-sm md:text-base'>tech enthusiast</span> | 
+                    <span className='text-sm md:text-base'>Freelancer</span>
+                </p>              
                 <button onClick={handleToggle} className='bg-stone-200 dark:bg-white/40 dark:text-white rounded-full md:right-10 right-5 absolute items-center top-2  p-1 sm:p-2'>{darkMode? <CiDark className=''/> : <GoSun />}</button>
             </div>
         </header>
@@ -80,7 +84,7 @@ function App() {
         <section id='contact' data-aos="zoom-in" className='dark:bg-black dark:text-white flex items-center justify-center  md:py-5'>
             <div className=' px-1 '>
                 <h1 className='text-2xl font-bold px-2 flex items-center'><TfiLink />Connect with me</h1>
-                <div className='flex flex-wrap transition-all justify-center'>
+                <div className='flex flex-wrap transition-all justify-center items-center'>
                     <a href='mailto:victorybenson98@gmail.com' target='_blank' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7'/>
                     </a>
