@@ -56,13 +56,15 @@ function App() {
         </header>
         <section id='hero' data-aos="zom-in" className='flex  justify-center dark:bg-black dark:text-white'>
             <div className='flex flex-col justify-between items-center w-full h-full md:px-4 px-1 pt-5'>
-                <div className='w-60 h-60 p-2 rounded-2xl overflow-hidden shadow border bg-white'>
+                <div className='w-72 h-72 p-2 rounded-2xl overflow-hidden shadow border bg-white'>
                     <img className='h-full w-full object-cover object-top rounded-2xl shadow' src="https://i.postimg.cc/qRLf4JMK/20240613-192347.jpg" alt="profile image" />
                 </div>
                 <div className='text-center w-[100%] md:w-[80] lg:w-[50%] py-2'>
-                    <h1 className=' text-3xl font-semibold'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Software Developer.</span> </h1>
+                    <h1 className=' text-3xl font-extrabold'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Software Developer.</span> </h1>
                     <div className='py-5 text-lg '>
-                        <p className=''>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
+                        <p className='text-lg font-bold uppercase py-1'>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
+                        <p className=''>Proficient in a wide range of modern web technologies including JavaScript, TypeScript, React, Node.js, and MongoDB etc. Adept at working in agile environments, collaborating with cross-functional teams, and delivering quality software on tight deadlines. 
+                            Passionate about learning new technologies and improving existing systems to provide efficient and user-friendly solutions.</p>
                         <p> Feel free to contact me, let's build something amazing together!</p>
                     </div>
                 </div>
@@ -171,11 +173,11 @@ function App() {
                             return(
                                 <div key={project.id} className=' md:w-80 max- h-[24rem] overflow-hidden  border border-purple-100/50 rounded-2xl'>
                                     <p className='w-full h-1/2'><img className='rounded h-full w-full object-cover object-top' src={project.image} alt="image" /></p>
-                                    <div className='p-3 h-1/2'>
+                                    <div className='p-3 h-1/2 relative'>
                                         <p className='font-bold uppercase text-purple-600'>{project.name}</p>
-                                        <p className='text-xs flex justify-end '>{project?.description}</p>
-                                        <p className='flex text-center py-2 transition-all'>
-                                            <a href={project.link} className='border border-purple-600/40 w-full h-full p-2 rounded-lg hover:bg-purple-600 hover:text-white hover:shadow'>Explore</a>
+                                        <p className='text-sm flex justify-end '>{project?.description}</p>
+                                        <p className='flex text-center py-2 transition-all absolute bottom-0 right-0 left-0 mx-2'>
+                                            <a href={project.link} target='_blank' className='border border-purple-600/40 w-full h-full p-2 rounded-lg bg-purple-600 text-white hover:shadow'>Live link</a>
                                         </p>
                                     </div>
                                 </div>
@@ -183,8 +185,8 @@ function App() {
                         })
                     }
                 </div>
-                <p className='text-center hover:font-bold transition-all font-mono '>
-                    <a href="https://github.com/victoryBenson/" target='_blank' className='bg-purple-600 text-white p-2 rounded-xl'>see more</a>
+                <p className='text-center hover:font-bold transition-all font-mono my-3'>
+                    <a href="https://github.com/victoryBenson/" target='_blank' className='bg-purple-600 text-white p-2 rounded-xl'>see more on github</a>
                 </p>
             </div>
         </section>

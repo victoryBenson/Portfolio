@@ -4,15 +4,15 @@ export const projects = [
         name: "Portfolio Website",
         image: "https://i.postimg.cc/WbY9GDHz/thumbnail1.png",
         link: "https://adejuwon.vercel.app/",
-        description: "I specialize in using design to elevate your business and drive success."
+        description: " Developed a visually appealing and user-friendly portfolio website for a Adejuwon(product designer) to showcase his design work, process, and creative projects."
     },
-    // {
-    //     id: 2,
-    //     name: "Universe_Blog",
-    //     image: "https://i.postimg.cc/bJVwb3Dw/782c50ce.jpg",
-    //     link: "https://universeblog.vercel.app/",
-    //     description: "This is a tech blog that covers topics related to technology, including the latest trends, innovations, products, and industry insights. "
-    // },
+    {
+        id: 2,
+        name: "Universe_Blog",
+        image: "https://i.postimg.cc/bJVwb3Dw/782c50ce.jpg",
+        link: "https://universeblog.vercel.app/",
+        description: "This is a tech blog that covers topics related to technology, including the latest trends, innovations, products, and industry insights. "
+    },
     {
         id: 3,
         name: "Will_Be_There",
