@@ -4,7 +4,7 @@ export const projects = [
         name: "Portfolio Website",
         image: "https://i.postimg.cc/WbY9GDHz/thumbnail1.png",
         link: "https://adejuwon.vercel.app/",
-        description: " Developed a visually appealing and user-friendly portfolio website for a Adejuwon(product designer) to showcase his design work, process, and creative projects."
+        description: " Developed a visually appealing and user-friendly portfolio website for Adejuwon(product designer) to showcase his design work, process, and creative projects."
     },
     {
         id: 2,
