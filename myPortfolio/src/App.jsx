@@ -65,7 +65,7 @@ function App() {
                         <p className='text-lg font-bold uppercase py-1'>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
                         <p className=''>Proficient in a wide range of modern web technologies including JavaScript, TypeScript, React, Node.js, and MongoDB etc. Adept at working in agile environments, collaborating with cross-functional teams, and delivering quality software on tight deadlines. 
                             Passionate about learning new technologies and improving existing systems to provide efficient and user-friendly solutions.</p>
-                        <p> Feel free to contact me, let's build something amazing together!</p>
+                        <p className='py-1'> Feel free to contact me, let's build something amazing together!</p>
                     </div>
                 </div>
             </div>
