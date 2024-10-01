@@ -54,18 +54,18 @@ function App() {
                 <button onClick={handleToggle} className='bg-stone-200 dark:bg-white/40 dark:text-white rounded-full md:right-10 right-5 absolute items-center top-2  p-1 sm:p-2'>{darkMode? <CiDark className=''/> : <GoSun />}</button>
             </div>
         </header>
-        <section id='hero' data-aos="zom-in" className='flex  justify-center dark:bg-black dark:text-white'>
+        <section id='hero' data-aos="zom-in" className='flex justify-center dark:bg-black dark:text-white'>
             <div className='flex flex-col justify-between items-center w-full h-full md:px-4 px-1 pt-5'>
                 <div className='w-72 h-72 p-2 rounded-2xl overflow-hidden shadow border bg-white'>
                     <img className='h-full w-full object-cover object-top rounded-2xl shadow' src="https://i.postimg.cc/qRLf4JMK/20240613-192347.jpg" alt="profile image" />
                 </div>
-                <div className='text-center w-[100%] md:w-[80] lg:w-[50%] py-2'>
-                    <h1 className=' text-3xl font-extrabold'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Software Developer.</span> </h1>
+                <div className='md:text-center w-[100%] md:w-[80] lg:w-[50%] p-2'>
+                    <h1 className='md:text-3xl font-bold md:font-extrabold'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Software Developer.</span> </h1>
                     <div className='py-5 text-lg '>
-                        <p className='text-lg font-bold uppercase py-1'>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
-                        <p className=''>Proficient in a wide range of modern web technologies including JavaScript, TypeScript, React, Node.js, and MongoDB etc. Adept at working in agile environments, collaborating with cross-functional teams, and delivering quality software on tight deadlines. 
+                        <p className='text-xl md:text-lg font-semibold md:font-bold uppercase'>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
+                        <p className='text-sm md:text-base'>Adept at working in agile environments, collaborating with cross-functional teams, and delivering quality software on tight deadlines. 
                             Passionate about learning new technologies and improving existing systems to provide efficient and user-friendly solutions.</p>
-                        <p className='py-1'> Feel free to contact me, let's build something amazing together!</p>
+                        <p className='text-sm md:text-base'> Feel free to contact me, let's build something amazing together!</p>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@ function App() {
         </section>
         <section id='contact' data-aos="zoom-in" className='dark:bg-black dark:text-white flex items-center justify-center  md:py-5'>
             <div className=' px-1 '>
-                <h1 className='text-2xl font-bold px-2 flex items-center'><TfiLink />Connect with me</h1>
+                <h1 className='text-lg md:text-2xl font-bold px-2 flex items-center'><TfiLink />Connect with me</h1>
                 <div className='flex flex-wrap transition-all justify-center items-center'>
                     <a href='mailto:victorybenson98@gmail.com' target='_blank' className='m-2 hover:scale-110 ease-in duration-100 rounded-full p-2'>
                         <BsFillEnvelopeAtFill size={20} className='text-red-7'/>
@@ -106,11 +106,11 @@ function App() {
             </div>
         </section>
         <section id='tech-skill' data-aos="fade-up" className='flex items-center justify-center sticky flex-col dark:bg-black py-10'>
-            <div className='text-2xl font-bold  top-0 bg-white dark:bg-black dark:text-white capitalize'>my tech skills/Tools</div>
+            <div className=' text-lg px-2 md:text-2xl font-bold top-0 bg-white dark:bg-black dark:text-white capitalize'>my tech skills/Tools</div>
             <div>
-                <div className='flex flex-col items-center py-2 px-2'>
+                <div className='flex flex-col md:items-center py-2 px-4'>
                     <span className='dark:text-white font-bold'>Frontend tools:</span>
-                    <div className='flex gap-2 flex-wrap items-center justify-center'>
+                    <div className='flex gap-2 flex-wrap md:items-center md:justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaHtml5 fontSize={20}/> HTML</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaCss3 fontSize={20}/> CSS</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiTailwindcss fontSize={20}/> TailwindCss</span>
@@ -122,9 +122,9 @@ function App() {
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiRedux />Redux</span>
                     </div>
                 </div>
-                <div className='flex flex-col items-center py-2'>
+                <div className='flex flex-col md:items-center py-2 px-4'>
                     <span className='dark:text-white font-bold'>Backend Technologies & Frameworks:</span>
-                    <div className='flex gap-2 flex-wrap items-center justify-center px-2'>
+                    <div className='flex gap-2 flex-wrap items-center md:justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaNodeJs fontSize={20}/> NodeJs</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiExpress fontSize={20}/> Express</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiInsomnia />Insomnia</span>
@@ -132,9 +132,9 @@ function App() {
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><IoLogoFirebase fontSize={20}/>Firebase</span>
                     </div>
                 </div>
-                <div className='flex flex-col items-center py-2'>
-                    <span className='dark:text-white font-bold'>Database & Development Tools/Platforms:</span>
-                    <div className='flex gap-2 flex-wrap items-center px-2 justify-center'>
+                <div className='flex flex-col items-center py-2 px-4'>
+                    <span className='dark:text-white font-bold p-2 md:text-center'>Database & Development Tools & Platforms:</span>
+                    <div className='flex gap-2 flex-wrap items-center md:justify-center'>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiMongodb size={20}/> MongoDB</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbCloudCode size={20}/>Cloudinary</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGitAlt fontSize={20}/>Git</span>
@@ -146,27 +146,12 @@ function App() {
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbBrandVercel size={20}/>Vercel</span>
                         <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiSwagger size={20}/>Swagger</span>
                     </div>
-                </div>
-                <div className='hidden flex-col items-center py-2'>
-                    <span className='dark:text-white font-bold'>Development Tools & Platforms:</span>
-                    <div className='flex gap-2 flex-wrap items-center justify-center'>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbCloudCode size={20}/>Cloudinary</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGitAlt fontSize={20}/>Git</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaGithub />Github</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiVisualstudiocode />Visual Studio Code</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><FaSlack fontSize={20}/>Slack</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiVite />Vite</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiRender />Render</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><TbBrandVercel size={20}/>Vercel</span>
-                        <span className='flex items-center bg-gray-200 p-2 rounded-lg'><SiSwagger size={20}/>Swagger</span>
-                    </div>
-                </div>
-                
+                </div>                
             </div>
         </section>
         <section id='projects' data-aos="fade-up" className='dark:bg-black dark:text-white flex justify-center md:py-10'>
             <div className='px-5 py-5 relative'>
-                <h1 className='text-2xl font-bold flex items-center justify-center sticky top-0 bg-white dark:bg-black dark:text-white'><TfiTime size={20} className='mr-1' />Recent Projects</h1>
+                <h1 className='text-lg md:text-2xl font-bold flex items-center justify-center sticky top-0 bg-white dark:bg-black dark:text-white'><TfiTime size={20} className='mr-1' />Recent Projects</h1>
                 <div className='py-4 flex flex-wrap items-center justify-center gap-4'>
                     {
                         projects.map((project)=>{
