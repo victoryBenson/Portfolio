@@ -60,13 +60,13 @@ function App() {
                     <img className='h-full w-full object-cover object-top rounded-2xl shadow' src="https://i.postimg.cc/qRLf4JMK/20240613-192347.jpg" alt="profile image" />
                 </div>
                 <div className='md:text-center w-[100%] md:w-[80] lg:w-[50%] p-2'>
-                    <h1 className='md:text-3xl font-semibold pt-5'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Web Developer.</span> </h1>
+                    <h1 className='text-lg md:text-3xl font-semibold pt-5'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Web Developer.</span> </h1>
                     <div className='py-5 text-lg '>
-                        <p className='text-xl md:text-lg text-[#8e948f]'>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
+                        <p className='text-lg md:text-lg text-[#8e948f]'>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
                         {/* <p className='text-sm md:text-base'>Adept at working in agile environments, collaborating with cross-functional teams, and delivering quality software on tight deadlines. 
                             Passionate about learning new technologies and improving existing systems to provide efficient and user-friendly solutions.
                         </p> */}
-                        <p className='text-xl md:text-lg text-[#8e948f]'> Feel free to contact me, let's build something amazing together!</p>
+                        <p className='text-xl md:text-lg text-[#8e948f] py-1'> Feel free to contact me, let's build something amazing together!</p>
                     </div>
                 </div>
             </div>
