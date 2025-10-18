@@ -1,5 +1,12 @@
 export const projects = [
     {
+        id: 0,
+        name: "Learning Management System-BackEnd",
+        image: "https://i.postimg.cc/pr5jn5KF/sociallogo.webp",
+        link: "https://e-steam.vercel.app/",
+        description: "A web-based learning management system (LMS) that enables educators to create, manage, and deliver online courses and training programs to students."
+    },
+    {
         id: 1,
         name: "Portfolio Website",
         image: "https://i.postimg.cc/WbY9GDHz/thumbnail1.png",

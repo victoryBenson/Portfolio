@@ -4,6 +4,7 @@ import { GoSun } from "react-icons/go";
 import { CiDark, CiHeart} from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { TfiLink, TfiTime } from "react-icons/tfi";
+import { FiLink } from "react-icons/fi";
 import { BsFillEnvelopeAtFill, BsGithub, BsLinkedin, BsWhatsapp} from "react-icons/bs";
 import { projects } from './component/works';
 import { IoIosArrowUp,  } from "react-icons/io";
@@ -45,8 +46,8 @@ function App() {
     <div className={`${darkMode && 'dark bg-black'} relative transition-all`}>
         <header id='header' className={`${isActive && 'fixed z-40 inset-0 top-0'} h-24 bg-white`}>
             <div className={`flex flex-col items-center justify-center h-full md:pl-0 py-2 relative shadow dark:bg-black dark:text-white capitalize`}>
-                <h1 className='font-extrabold text-lg md:text-3xl '>victory <span className='text-purple-600'>.K</span> benson </h1>
-                <p className='text-purple-600 dark:text-violet-400 capitalize text-center' >
+                <h1 className='font-extrabold text-lg md:text-3xl '>victory <span className='text-primary'>K</span> benson </h1>
+                <p className='dark: text-primary-arch capitalize text-center' >
                     <span className='text-sm md:text-base'>Web developer</span> | 
                     <span className='text-sm md:text-base'>tech enthusiast</span> | 
                     <span className='text-sm md:text-base'>Freelancer</span>
@@ -56,11 +57,11 @@ function App() {
         </header>
         <section id='hero' data-aos="zom-in" className='flex justify-center dark:bg-black dark:text-white'>
             <div className='flex flex-col justify-between items-center w-full h-full md:px-4 px-1 pt-5'>
-                <div className='w-72 h-72 p-2 rounded-2xl overflow-hidden shadow border bg-white'>
-                    <img className='h-full w-full object-cover object-top rounded-2xl shadow' src="https://i.postimg.cc/qRLf4JMK/20240613-192347.jpg" alt="profile image" />
+                <div className='w-72 h-72 p-2 rounded-full overflow-hidden shadow border bg-white'>
+                    <img className='h-full w-full object-cover object-top rounded-full shadow' src="https://i.postimg.cc/qRLf4JMK/20240613-192347.jpg" alt="profile image" />
                 </div>
                 <div className='md:text-center w-[100%] md:w-[80] lg:w-[50%] p-2'>
-                    <h1 className='text-lg md:text-3xl font-semibold pt-5'>Hello! I'm Victory, a <span className='text-purple-600 dark:text-violet-400 font-extrabold'> Web Developer.</span> </h1>
+                    <h1 className='text-lg md:text-3xl font-semibold pt-5'>Hello! I'm Victory, a <span className='text-primary dark:text-primary font-extrabold'> Web Developer.</span> </h1>
                     <div className='py-5 text-lg '>
                         <p className='text-lg md:text-lg text-[#8e948f]'>I enjoy building dynamic and responsive websites to meet specific need or solve a particular problem.</p>
                         {/* <p className='text-sm md:text-base'>Adept at working in agile environments, collaborating with cross-functional teams, and delivering quality software on tight deadlines. 
@@ -78,7 +79,7 @@ function App() {
                     href="https://docs.google.com/document/d/1NwCnkT_UIywNnC2nf1WoBeS-IJACIh21OpYf2UIewr0/edit?usp=sharing" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className='flex items-center justify-center bg-purple-600 p-3 text-white rounded-lg hover:bg-opacity-90'
+                    className='flex items-center justify-center bg-primary p-3 text-white rounded-lg hover:bg-opacity-90'
                     >
                         <IoDocumentTextOutline/>Résumé
                 </a>
@@ -152,35 +153,35 @@ function App() {
             </div>
         </section> */}
 
-        <section id='projects' data-aos="fade-up" className='dark:bg-black dark:text-white flex justify-center md:py-10'>
+        <section id='projects' data-aos="fade-up" className='dark:bg-primary-arch/80 dark:text-white flex justify-center md:py-10'>
             <div className='px-5 py-5 relative'>
-                <h1 className='text-lg md:text-2xl font-bold flex items-center justify-center sticky top-0 bg-white dark:bg-black dark:text-white'><TfiTime size={20} className='mr-1' />Recent Projects</h1>
-                <div className='py-4 flex flex-wrap items-center justify-center gap-4'>
+                <h1 className='text-lg md:text-2xl font-bold flex items-center justify-center sticky top-0 dark:text-white mb-10'><TfiTime size={20} className='mr-1' />Previous Projects</h1>
+                <div className='py-4 grid grid-cols-3 items-center justify-center gap-8'>
                     {
                         projects.map((project)=>{
                             return(
-                                <div key={project.id} className=' md:w-80 h-[28rem] overflow-hidden  border border-purple-100/50 rounded-2xl'>
+                                <div key={project.id} className=' md:w-80 h-[30rem] overflow-hidden  border border-purple-100/10 rounded-2xl'>
                                     <p className='w-full h-1/2'><img className='rounded h-full w-full object-cover object-top' src={project.image} alt="image" /></p>
                                     <div className='p-3 h-1/2 relative'>
-                                        <p className='font-bold uppercase text-purple-600'>{project.name}</p>
-                                        <p className='text-sm flex justify-end '>{project?.description}</p>
-                                        <p className='flex text-center py-2 transition-all absolute bottom-0 right-0 left-0 mx-2'>
-                                            <a href={project.link} target='_blank' className='border border-purple-600/40 w-full h-full p-3 rounded-lg bg-purple-600 text-white hover:shadow'>Live link</a>
+                                        <p className='font-bold uppercase text-primary dark:text-white pb-2'>{project.name}</p>
+                                        <p className='text-sm flex justify-end mb-4'>{project?.description}</p>
+                                        <p className='flex text-center py-2 transition-all absolute bottom-4 right-0 left-0 mx-2 '>
+                                            <a href={project.link} target='_blank' className=' flex item-center justify-center w-full h-full p-3 rounded-lg bg-primary text-white hover:shadow'> <FiLink /> Live link </a>
                                         </p>
                                     </div>
                                 </div>
                             )
-                        })
+                        }).slice(0,4)
                     }
                 </div>
                 <p className='text-center hover:font-bold transition-all font-mono my-3'>
-                    <a href="https://github.com/victoryBenson/" target='_blank' className='bg-purple-600 text-white p-4 px-8 mt-5 rounded-xl'>See more</a>
+                    <a href="https://github.com/victoryBenson/" target='_blank' className='bg-primary text-white p-4 px-8 mt-5 rounded-xl'>See more</a>
                 </p>
             </div>
         </section>
-        <footer className='bg-purple-600 dark:bg-black text-white border-t border-stone-100/10'>
+        <footer className='bg-green-900 dark:bg-black text-white border-t border-stone-100/10 py-10'>
             <div className='py-5 self-center flex flex-col items-center justify-center space-y-5'>
-                <h1 className='text-xl font-bold px-2 py-3 flex items-center text-white dark:text-stone-500'><TfiLink />Connect with me</h1>
+                {/* <h1 className='text-xl font-bold px-2 py-3 flex items-center text-white dark:text-stone-500'><TfiLink />Connect with me</h1> */}
                 <div className='flex flex-wrap transition-all '>
                     <a href="https://github.com/victoryBenson" target="_blank" className='sm:m-2 text-sm sm:text-normal hover:scale-110 ease-in duration-100 rounded-full p-2 flex flex-col items-center'>
                         <BsGithub size={20} className=''/>
@@ -198,8 +199,8 @@ function App() {
                         <FaXTwitter size={20} className='text-white'/>
                     </a>
                 </div> 
-                <div className="flex items-center text-white dark:text-stone-400">Designed & Built with <CiHeart className='mx-1 text-white dark:text-purple-600' size={20} /> by me</div>
-                <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col z-[99] items-center right-5 bottom-14' : "hidden"} `}><IoIosArrowUp className='bg-white dark:bg-purple-600 dark:text-white text-purple-600 shadow rounded-full' size={40}/></a>     
+                <div className="flex items-center text-white dark:text-stone-400">Designed & Built with <CiHeart className='mx-1 text-white dark:text-primary' size={20} /> by me</div>
+                <a onClick={scrollToTop} href='#header' className={`${isActive ? 'fixed flex flex-col z-[99] items-center right-5 bottom-14 p-4' : "hidden"} `}><IoIosArrowUp className='bg-white dark:bg-primary dark:text-white text-primary shadow rounded-full' size={30}/></a>     
             </div>
         </footer>
     </div>
