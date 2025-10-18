@@ -156,12 +156,12 @@ function App() {
         <section id='projects' data-aos="fade-up" className='dark:bg-primary-arch/80 dark:text-white flex justify-center md:py-10'>
             <div className='px-5 py-5 relative'>
                 <h1 className='text-lg md:text-2xl font-bold flex items-center justify-center sticky top-0 dark:text-white mb-10'><TfiTime size={20} className='mr-1' />Previous Projects</h1>
-                <div className='py-4 grid grid-cols-3 items-center justify-center gap-8'>
+                <div className='py-4 grid  lg:grid-cols-3 items-center justify-center gap-8'>
                     {
                         projects.map((project)=>{
                             return(
                                 <div key={project.id} className=' md:w-80 h-[30rem] overflow-hidden  border border-purple-100/10 rounded-2xl'>
-                                    <p className='w-full h-1/2'><img className='rounded h-full w-full object-cover object-top' src={project.image} alt="image" /></p>
+                                    <p className='w-full h-1/2'><img className='rounded h-full w-full object-cover object-center' src={project.image} alt="image" /></p>
                                     <div className='p-3 h-1/2 relative'>
                                         <p className='font-bold uppercase text-primary dark:text-white pb-2'>{project.name}</p>
                                         <p className='text-sm flex justify-end mb-4'>{project?.description}</p>
